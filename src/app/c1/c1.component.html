@@ -1,0 +1,18 @@
+
+
+<p>
+  c1 works!
+</p>
+
+<!--<li *ngFor="let da of data">-->
+    <!--{{da | json}}-->
+<!--</li>-->
+
+<app-pagination
+  [count]="total"
+  [page]= "page"
+  [loading]="false"
+  (onPrev)="onPrev($event)"
+  (onNext)="onNext($event)"
+  (onPage)="goToPage($event)">
+</app-pagination>
